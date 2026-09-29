@@ -1,0 +1,6 @@
+{
+  "name": "SRIKANTH GHORAI",
+  "description": "Premium Jewellery Atelier, Goldsmith Worker Marketplace and Workshop Management System. Where Every Gram Tells a Story.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

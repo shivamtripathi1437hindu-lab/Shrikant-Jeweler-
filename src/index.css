@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #D4AF37;
+    --gold-light: #F5E6B5;
+    --gold-dark: #997A15;
+    --bg-dark: #070707;
+    --card-dark: #121212;
+    --card-surface: #181818;
+  }
+
+  body {
+    background-color: #070707;
+    color: #e5e2e1;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'EB Garamond', Georgia, serif;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Custom Gold Metallic Gradient Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0B3 0%, #D4AF37 50%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(135deg, #D4AF37, #F5E6B5, #8A6409) 1;
+}
+
+/* Shimmer animation */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-shimmer-btn {
+  background: linear-gradient(90deg, #D4AF37 0%, #FFF3C4 50%, #D4AF37 100%);
+  background-size: 200% auto;
+  transition: all 0.3s ease;
+}
+
+.gold-shimmer-btn:hover {
+  background-position: right center;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0e0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Leaflet dark theme fix */
+.leaflet-container {
+  background: #121212 !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: #181818 !important;
+  color: #e5e2e1 !important;
+  border: 1px solid #D4AF37 !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.8) !important;
+}
+
